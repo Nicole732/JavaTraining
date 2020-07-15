@@ -7,4 +7,5 @@ public class VariablesIntro {
         String name= "Beatrice";
         System.out.println(name + " starts with " + nameFirstLetter + ", and she is " + age + " years old.");
     }
+
 }
