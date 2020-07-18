@@ -4,9 +4,12 @@ public class VariablesIntro {
 
     static String name = "Beatrice";
 
-    public void totalIncome(int[] args) {
-
-    }
+    /*
+     * public void totalIncome(int[] args) {
+     * 
+     * 
+     * }
+     */
 
     public static void main(String[] args) {
         // use of different variable types
@@ -23,14 +26,13 @@ public class VariablesIntro {
         salary1 = sc.nextInt();
         System.out.println("Enter the second salary: ");
         salary2 = sc.nextInt();
-
         sc.close();
         totalSalary = salary1 + salary2;
         System.out.print(name + "'s annual income is: ");
         System.out.print("$" + totalSalary + "\n");
         System.out.println("###############");
 
-        // addition using a method with arguments input??
+        // addition using a method totalIncome with int arguments input??
 
     }
 
