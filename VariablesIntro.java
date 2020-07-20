@@ -4,14 +4,16 @@ public class VariablesIntro {
 
     static String name = "Beatrice";
 
-    /*
-     * public void totalIncome(int[] args) {
-     * 
-     * 
-     * }
-     */
+    public static void totalIncome(String[] args) {
+        int salary1Arg = Integer.parseInt(args[0]);
+        int salary2Arg = Integer.parseInt(args[1]);
+        int totalSalaryArg = salary1Arg + salary2Arg;
+        System.out.println(name + " annual salary with the provided arguments is " + totalSalaryArg);
+
+    }
 
     public static void main(String[] args) {
+
         // use of different variable types
         int age = 42;
         char nameFirstLetter = 'B';
@@ -32,7 +34,12 @@ public class VariablesIntro {
         System.out.print("$" + totalSalary + "\n");
         System.out.println("###############");
 
-        // addition using a method totalIncome with int arguments input??
+        // addition using a method totalIncome with int arguments input
+        //totalIncome();
+        int salary1Arg = Integer.parseInt(args[0]);
+        int salary2Arg = Integer.parseInt(args[1]);
+        int totalSalaryArg = salary1Arg + salary2Arg;
+        System.out.println(name + " annual salary with the provided arguments is " + totalSalaryArg);
 
     }
 
