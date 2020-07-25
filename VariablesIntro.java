@@ -35,12 +35,13 @@ public class VariablesIntro {
         System.out.println("###############");
 
         // addition using a method totalIncome with int arguments input
-        //totalIncome();
+        //VariablesIntro.totalIncome();
+
+        //addition using input arguments while calling the class
         int salary1Arg = Integer.parseInt(args[0]);
         int salary2Arg = Integer.parseInt(args[1]);
         int totalSalaryArg = salary1Arg + salary2Arg;
-        System.out.println(name + " annual salary with the provided arguments is " + totalSalaryArg);
-
+        System.out.println(name + " annual salary with the provided arguments is $" + totalSalaryArg);
     }
 
 }
