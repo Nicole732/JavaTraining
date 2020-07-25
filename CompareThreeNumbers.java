@@ -7,7 +7,8 @@ class CompareThreeNumbers {
     public static void main(String[] Args) {
 
         System.out.println("Let us compare three numbers of your choice to find the biggest.");
-        int num1, num2, num3, biggestNumber;
+        int num1, num2, num3;
+		int biggestNumber;
 
         Scanner nb = new Scanner(System.in);
         System.out.println("Enter the first number: ");
@@ -18,9 +19,20 @@ class CompareThreeNumbers {
         num3 = nb.nextInt();
         nb.close();
 
-        // comparing the frist two numbers
-        // (num1 >= num2)? biggestNumber = num1 : biggestNumber = num2;
+        // comparing the frist two numbers with ternary operator in lieu of if else statements
+        biggestNumber = (num1 >= num2)? num1 : num2;
+        System.out.println( "The biggest of the first two numbers is: " + biggestNumber );
+        biggestNumber = (biggestNumber >= num3)? biggestNumber : num3;
+        System.out.println("#################");
+        System.out.println("The biggest number is: " + biggestNumber);
 
+        System.out.println("#################");
+        if (biggestNumber % 2 == 0){
+            System.out.println("Our biggest number is even.");
+
+        } else {
+            System.out.print("Our biggest number is odd.");
+        }
     }
 
 }
