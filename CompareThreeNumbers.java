@@ -34,9 +34,10 @@ class CompareThreeNumbers {
             if ((biggestNumber <= 127) && (biggestNumber >= -128)) {
                 System.out.println("It is also of byte data type in Java.");
             }
-        } else if (biggestNumber % 2 != 0) {
+        } else {
             System.out.print("Our biggest number is odd.");
         }
+
     }
 
 }
