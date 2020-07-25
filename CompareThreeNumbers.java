@@ -8,8 +8,9 @@ class CompareThreeNumbers {
 
         System.out.println("Let us compare three numbers of your choice to find the biggest.");
         int num1, num2, num3;
-		int biggestNumber;
+        int biggestNumber;
 
+        // get input from the users
         Scanner nb = new Scanner(System.in);
         System.out.println("Enter the first number: ");
         num1 = nb.nextInt();
@@ -19,18 +20,21 @@ class CompareThreeNumbers {
         num3 = nb.nextInt();
         nb.close();
 
-        // comparing the frist two numbers with ternary operator in lieu of if else statements
-        biggestNumber = (num1 >= num2)? num1 : num2;
-        System.out.println( "The biggest of the first two numbers is: " + biggestNumber );
-        biggestNumber = (biggestNumber >= num3)? biggestNumber : num3;
+        // compare numbers with ternary operator in lieu of if else statements
+        biggestNumber = (num1 >= num2) ? num1 : num2;
+        System.out.println("The biggest of the first two numbers is: " + biggestNumber);
+        biggestNumber = (biggestNumber >= num3) ? biggestNumber : num3;
         System.out.println("#################");
         System.out.println("The biggest number is: " + biggestNumber);
 
         System.out.println("#################");
-        if (biggestNumber % 2 == 0){
+        // use of if else loops
+        if (biggestNumber % 2 == 0) {
             System.out.println("Our biggest number is even.");
-
-        } else {
+            if ((biggestNumber <= 127) && (biggestNumber >= -128)) {
+                System.out.println("It is also of byte data type in Java.");
+            }
+        } else if (biggestNumber % 2 != 0) {
             System.out.print("Our biggest number is odd.");
         }
     }
