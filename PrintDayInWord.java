@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class PrintDayInWord {
-    // this code print days of the week base on a corresponding number
+    // this code prints the days of the week base on a corresponding number
     public static void main(String[] args){
         int dayNumber;
 
