@@ -8,7 +8,6 @@ class Bicycle {
         this.gear = gear;
         this.speed = speed;
     }
-    
 
     public void applyBrake(int decrement) {
         speed -= decrement;
@@ -19,6 +18,7 @@ class Bicycle {
     }
 
 }
+
 class MountainBike extends Bicycle {
     /*
      * the MountainBike subclass adds one more field *int seatHeight*. the
@@ -31,22 +31,39 @@ class MountainBike extends Bicycle {
     int startHeight;
 
     // Bicycle mountainBicycle;
-     MountainBike(int gear, int speed, int startheight) {
-      super(gear,speed);
-    // this.startHeight = startHeight;
-    // }
+    MountainBike(int gear, int speed, int startHeight) {
+        super(gear, speed);
+        this.startHeight = startHeight;
+    }
+
     public void setHeight(int newValue) {
         // this.newValue = newValue;
     }
 
 }
 
+/* 
+Create a class *Owner* with fields *String name and int age* and make sure the  MountainBike HAS-A owner.
+*/
+class Owner {
+    
+}
+
+
+/* 
+Write a *Test*  class where you will be creating a MountainBike object and print the properties of that object
+*/
+class Test {
+    
+       
+}
+
 public class Inheritance {
     public static void main(String[] args) {
         System.out.println("Main Method");
         Bicycle joelBike = new Bicycle(2,3);
-        joelBike
+      
         
     }
-    
+
 }
