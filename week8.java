@@ -7,6 +7,10 @@ In a Test class, create an Animal Pig and Cat  objects and call the animalSound(
 also call the animalSound(2) on Cat object
 */
 
+interface AquaticAnimals {
+    public void swim();
+}
+
 class Animal {
     public void animalSound() {
         System.out.println("The animal makes a sound");
@@ -27,19 +31,36 @@ class Cats extends Animal {
         System.out.println("cat meows");
     }
 
-    public void animalSound(int num) {
+    public void animalSound(final int num) {
         System.out.println("The cat meows " + num + " times.");
     }
 }
 
-public class week8 {
-    public static void main(String[] args) {
-        Pigs TonyPig = new Pigs();
-        TonyPig.animalSound();
+class seaSnake extends Animal implements AquaticAnimals {
+    public void animalSound() {
+        super.animalSound(); // requesting the parent class animalSound implementation. Not an obligation.
+        System.out.println("plash plash");
+    }
 
-        Cats Cathy = new Cats();
+    // implementation of the interface's method
+    public void swim() {
+        System.out.println("has a crawl like swimming style");
+    }
+}
+
+public class week8 {
+    public static void main(final String[] args) {
+        final Pigs TonyPig = new Pigs();
+        TonyPig.animalSound();
+        System.out.println("********************");
+
+        final Cats Cathy = new Cats();
         Cathy.animalSound();
         Cathy.animalSound(10);
+        System.out.println("********************");
 
+        seaSnake faintBanded = new seaSnake();
+        faintBanded.swim();
+        faintBanded.animalSound();
     }
 }
