@@ -1,5 +1,3 @@
-import sun.security.action.GetBooleanAction;
-
 /*
 *Lab*
 Create an Interface BankInterface with methods void credit(Long accountNumber, double amount) 
@@ -32,13 +30,13 @@ class BankB extends Bank {
 }
 class BankC extends Bank {
     public void getBalance(){
-        System.out.println("The Balance in BanKC is $200.")
+        System.out.println("The Balance in BanKC is $200.");
     }
    
 }
 public class week9 {
     public static void main(String[] args) {
-
+        System.out.println("*** Test Method ***");
 
     }
 }
