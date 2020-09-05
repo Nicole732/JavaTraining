@@ -39,6 +39,9 @@ public class week9 {
         System.out.println("*** Test Method ***");
         BankA balanceA = new BankA();
         balanceA.getBalance();
+        BankB balanceB = new BankB();
+        balanceB.getBalance();
+        
         
     }
 }
