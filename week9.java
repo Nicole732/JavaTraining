@@ -13,27 +13,32 @@ interface BankInterface {
 
     boolean debit(Long accountNumber, double amount);
 }
+
 abstract class Bank {
     public abstract void getBalance();
 }
-class BankA extends Bank {
 
-    public void getBalance(){
+class BankA extends Bank {
+    public void getBalance() {
         System.out.println("The Balance in BankA is $100.");
+
     }
 }
+
 class BankB extends Bank {
-    public void getBalance(){
+    public void getBalance() {
         System.out.println("The Balance in BankB is $150.");
     }
-        
+
 }
+
 class BankC extends Bank {
-    public void getBalance(){
-        System.out.println("The Balance in BanKC is $200.");
+    public void getBalance() {
+        System.out.println("The Balance in BankC is $200.");
     }
-   
+
 }
+
 public class week9 {
     public static void main(String[] args) {
         System.out.println("*** Test Method ***");
@@ -43,7 +48,5 @@ public class week9 {
         balanceB.getBalance();
         BankC balanceC = new BankC();
         balanceC.getBalance();
-
-        
     }
 }
