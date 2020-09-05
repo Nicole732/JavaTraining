@@ -37,6 +37,8 @@ class BankC extends Bank {
 public class week9 {
     public static void main(String[] args) {
         System.out.println("*** Test Method ***");
-
+        BankA balanceA = new BankA();
+        balanceA.getBalance();
+        
     }
 }
