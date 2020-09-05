@@ -41,7 +41,9 @@ public class week9 {
         balanceA.getBalance();
         BankB balanceB = new BankB();
         balanceB.getBalance();
-        
+        BankC balanceC = new BankC();
+        balanceC.getBalance();
+
         
     }
 }
