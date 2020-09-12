@@ -1,8 +1,10 @@
+
 /*  Create ArrayList of integer, add 5 integers to the array 
 and write en method to return the minimum element of that array
 */
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.*;
 
 public class week10b {
     public static void main(String[] args) {
@@ -15,6 +17,15 @@ public class week10b {
         int minNum = Collections.min(numbers);
         System.out.println("The minimum number in the ArrayList is " + minNum);
 
-        
+        // Use of LinkedList to remove double entry and print it out
+        LinkedList<String> doubleWord = new LinkedList<String>();
+        doubleWord.add("Ali");
+        doubleWord.add("Sam");
+        doubleWord.add("Ali");
+        doubleWord.remove("Ali");
+        Iterator<String> iterator = doubleWord.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
