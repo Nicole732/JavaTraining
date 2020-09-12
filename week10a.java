@@ -1,19 +1,10 @@
 /*
 A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.(Wikipedia)
-	Given a string , print Yes if it is a palindrome, print No otherwise.
+    Given a string , print Yes if it is a palindrome, print No otherwise.
+    examples: Anna, noon, pap, refer, radar, madam, teet...
 */
 import java.util.Scanner;
 
-class reverseWord {
-    public void reverseWord(String str){
-        String[] testWord = str.split(" ");
-        System.out.println(testWord);
-
-       
-    }
-
-
-}
 
 public class week10a {
 
@@ -36,7 +27,13 @@ public class week10a {
         
         //Compare the two word to see if they are equal 
         //then conclude that it is a palindrome
-        
+        if (testWord.equalsIgnoreCase(reversedWord)) {
+            System.out.println("The Word " + testWord + " is a palindrome!");
+            System.out.println("******************");
+        } else {
+            System.out.println("The Word " + testWord + " is a not palindrome!");
+            System.out.println("******************");
+        }
 
     }
 }
